@@ -30,6 +30,7 @@ html {
 }
 
 nav {
+    z-index: 1;
     position: fixed;
     top: 1rem;
     left: 50%;
