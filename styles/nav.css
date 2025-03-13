@@ -1,0 +1,60 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Chivo';
+    src: url('../fonts/Chivo_Mono/ChivoMono-VariableFont_wght.ttf');
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto/Roboto-VariableFont_wdth\,wght.ttf');
+}
+
+:root {
+    --color1: #eeeeff;
+    --color2: #303040;
+    --color3: #606080;
+    --color4: #eeeeff80;
+    --shadow1: #30304040
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+nav {
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--color4);
+    backdrop-filter: blur(.5rem);
+    padding: 1rem;
+    border-radius: 1rem;
+    box-shadow: .5rem 1rem 2rem var(--shadow1);
+}
+
+nav .menu {
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+}
+
+nav .menu > li {
+    width: 8rem;
+    text-align: center;
+}
+
+nav .menu a {
+    font: normal 1.2rem 'Chivo';
+    color: #303040;
+    text-decoration: none;
+    transition: all 125ms;
+}
+
+nav .menu a:hover {
+    color: var(--color3);
+}

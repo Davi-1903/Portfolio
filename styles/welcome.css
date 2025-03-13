@@ -1,0 +1,20 @@
+:root {
+    --color1: #eeeeff;
+    --color2: #303040;
+    --color3: #606080;
+    --color4: #eeeeff80;
+    --shadow1: #30304040
+}
+
+.welcome {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(to top, var(--color1), transparent 20%), url('../media/background.jpg') center bottom no-repeat fixed;
+    background-size: cover;
+}
+
+.welcome .welcome-text h1 {
+    font: normal 5rem 'Chivo';
+    color: var(--color2);
+}
