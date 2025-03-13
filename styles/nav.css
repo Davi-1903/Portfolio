@@ -25,6 +25,10 @@
     border: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 nav {
     position: fixed;
     top: 1rem;
@@ -33,7 +37,7 @@ nav {
     background-color: var(--color4);
     backdrop-filter: blur(.5rem);
     padding: 1rem;
-    border-radius: 1rem;
+    /* border-radius: 1rem; */
     box-shadow: .5rem 1rem 2rem var(--shadow1);
 }
 

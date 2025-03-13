@@ -10,7 +10,7 @@
     height: 100vh;
     display: grid;
     place-items: center;
-    background: linear-gradient(to top, var(--color1), transparent 20%), url('../media/background.jpg') center bottom no-repeat fixed;
+    background: linear-gradient(to top, var(--color1), transparent 30%), url('../media/background.jpg') center bottom no-repeat fixed;
     background-size: cover;
 }
 
