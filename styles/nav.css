@@ -36,8 +36,7 @@ nav {
     transform: translateX(-50%);
     background-color: var(--color4);
     backdrop-filter: blur(.5rem);
-    padding: 1rem;
-    /* border-radius: 1rem; */
+    padding: 1rem 2rem;
     box-shadow: .5rem 1rem 2rem var(--shadow1);
 }
 
@@ -53,12 +52,25 @@ nav .menu > li {
 }
 
 nav .menu a {
+    position: relative;
     font: normal 1.2rem 'Chivo';
     color: #303040;
     text-decoration: none;
     transition: all 125ms;
 }
 
-nav .menu a:hover {
-    color: var(--color3);
+nav .menu a::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -2px;
+    height: 2px;
+    width: 0;
+    background-color: var(--color2);
+    transition: all 125ms;
+}
+
+nav .menu a:hover::after {
+    left: 0;
+    width: 100%;
 }
