@@ -48,6 +48,11 @@
     padding: 1.5rem;
 }
 
+#projects .projects-container .card:hover {
+    transform: translate(-.25rem, -.25rem);
+    box-shadow: .25rem .25rem 0 var(--color2);
+}
+
 #projects .projects-container > a:nth-child(odd) .card {
     flex-direction: row-reverse;
 }
@@ -75,10 +80,6 @@
     color: var(--color2);
     text-decoration: none;
     margin-bottom: 1rem;
-}
-
-#projects .projects-container .card:hover h3 {
-    text-decoration: underline;
 }
 
 #projects .projects-container .text p {
