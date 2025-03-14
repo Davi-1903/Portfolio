@@ -8,15 +8,15 @@
 
 #projects {
     background-color: var(--color1);
-    padding: 3rem;
+    padding: 6rem;
     display: flex;
-    gap: 3rem;
+    gap: 6rem;
 }
 
 #projects .title-container {
     position: sticky;
-    top: 3rem;
-    height: calc(100vh - 6rem);
+    top: 6rem;
+    height: calc(100vh - 12rem);
     padding: 3rem;
     display: grid;
     place-items: center;
@@ -34,7 +34,7 @@
     flex-grow: 1;
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 3rem;
 }
 
 #projects .projects-container > a {
@@ -95,8 +95,9 @@
 
 @media screen and (width < 1200px) {
     #projects {
+        padding: 3rem;
         flex-direction: column;
-        gap: 1.5rem
+        gap: 1.5rem;
     }
 
     #projects .title-container {
