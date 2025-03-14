@@ -81,3 +81,9 @@
     font: normal 1.2rem 'Roboto';
     color: var(--color2);
 }
+
+#projects .projects-container .text p > code {
+    padding: .25rem;
+    border-radius: .5rem;
+    background-color: var(--shadow1);
+}
