@@ -20,7 +20,7 @@
     width: min(60em, 80%);
 }
 
-#contacts .title-container > h1 {
+#contacts .title-container > h2 {
     font: bold 6em 'Chivo';
     text-align: center;
     color: var(--color2);
@@ -69,7 +69,7 @@
         padding-top: 3em;
     }
 
-    #contacts .title-container > h1 {
+    #contacts .title-container > h2 {
         font-size: 3.2em;
     }
 
