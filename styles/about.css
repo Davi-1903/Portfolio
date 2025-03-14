@@ -7,7 +7,7 @@
 }
 
 #about-me {
-    height: 100vh;
+    min-height: 100vh;
     padding: 6rem;
     background-color: var(--color1);
     display: grid;
@@ -39,13 +39,35 @@
 }
 
 #about-me .text-container > h2 {
-    font: bold 2.6rem 'chivo';
+    font: bold 2.6em 'chivo';
     color: var(--color2);
-    margin-bottom: 1rem;
+    margin-bottom: .6em;
 }
 
 #about-me .text-container > p {
     text-align: justify;
-    font: normal 1.2rem/1.5 'Roboto';
+    font: normal 1.2em/1.5 'Roboto';
     color: var(--color2);
+}
+
+@media screen and (width < 800px) {
+    #about-me {
+        padding: 3rem;
+    }
+
+    #about-me .about-container {
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    #about-me .about-container {
+        max-width: 24rem;
+        flex-direction: column;
+        margin-left: 0;
+        font-size: 12px;
+    }
+
+    #about-me .text-container {
+        position: static;
+    }
 }
