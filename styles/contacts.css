@@ -1,0 +1,61 @@
+:root {
+    --color1: #eeeeff;
+    --color2: #303040;
+    --color3: #606080;
+    --color4: #eeeeff80;
+    --shadow1: #30304040
+}
+
+#contacts {
+    height: 100vh;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color1);
+}
+
+#contacts article {
+    width: min(60rem, 80%);
+}
+
+#contacts .title-container > h1 {
+    font: bold 6rem 'Chivo';
+    text-align: center;
+    color: var(--color2);
+}
+
+#contacts .contacts-container {
+    padding: 1.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+}
+
+#contacts .contacts-container > a {
+    flex: 1 0 15rem;
+    text-decoration: none;
+}
+
+#contacts .contacts-container .card {
+    padding: 1.5rem;
+    border: 2px solid var(--color2);
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+#contacts .contacts-container .card:hover {
+    transform: translate(-.25rem, -.25rem);
+    box-shadow: .25rem .25rem 0 0 var(--color2);
+}
+
+#contacts .contacts-container .card div {
+    text-align: center;
+}
+
+#contacts .contacts-container .card h3 {
+    font: bold 2rem 'Chivo';
+    color: var(--color2);
+}
