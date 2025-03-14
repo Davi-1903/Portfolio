@@ -77,6 +77,10 @@
     margin-bottom: 1rem;
 }
 
+#projects .projects-container .card:hover h3 {
+    text-decoration: underline;
+}
+
 #projects .projects-container .text p {
     font: normal 1.2rem 'Roboto';
     color: var(--color2);
