@@ -32,51 +32,52 @@
 
 #projects .projects-container {
     flex-grow: 1;
-    padding: 2rem;
-    display: grid;
-    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
-    gap: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
 }
 
-#projects .projects-container .card > a {
+#projects .projects-container > a {
     text-decoration: none;
 }
 
 #projects .projects-container .card {
-    overflow: hidden;
-    position: relative;
-    /* box-shadow: .5rem 1rem 2rem var(--shadow1); */
+    display: flex;
+    gap: 3rem;
+    border: 2px solid var(--color2);
+    padding: 1.5rem;
 }
 
-#projects .projects-container .card > img {
+#projects .projects-container > a:nth-child(odd) .card {
+    flex-direction: row-reverse;
+}
+
+#projects .projects-container .card .img-container {
+    flex: 1 0 0;
+}
+
+#projects .projects-container .card img {
     width: 100%;
     transition: all 250ms;
 }
 
 #projects .projects-container .text {
-    position: absolute;
-    left: 0;
-    bottom: -10rem;
-    padding: 2rem;
-    transition: all 250ms;
+    flex: 1 0 0;
+    margin-block: auto;
 }
 
-#projects .projects-container .card:hover .text {
-    bottom: 0;
-}
-
-#projects .projects-container .card:hover > img {
-    filter: brightness(0.25) grayscale(0);
+#projects .projects-container > a:nth-child(odd) .card .text {
+    text-align: right;
 }
 
 #projects .projects-container .text h3 {
-    font: normal 3rem 'Chivo';
-    color: var(--color1);
+    font: normal 5rem 'Chivo';
+    color: var(--color2);
     text-decoration: none;
     margin-bottom: 1rem;
 }
 
 #projects .projects-container .text p {
     font: normal 1.2rem 'Roboto';
-    color: var(--color1);
+    color: var(--color2);
 }
