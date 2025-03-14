@@ -25,7 +25,7 @@
 #projects .title-container > h2 {
     cursor: vertical-text;
     position: absolute;
-    font: bold 5rem 'Chivo';
+    font: bold 5em 'Chivo';
     color: var(--color2);
     transform: rotate(-90deg);
 }
@@ -43,6 +43,7 @@
 
 #projects .projects-container .card {
     display: flex;
+    flex-wrap: wrap;
     gap: 3rem;
     border: 2px solid var(--color2);
     padding: 1.5rem;
@@ -58,7 +59,7 @@
 }
 
 #projects .projects-container .card .img-container {
-    flex: 1 0 0;
+    flex: 1 1 350px;
 }
 
 #projects .projects-container .card img {
@@ -67,7 +68,7 @@
 }
 
 #projects .projects-container .text {
-    flex: 1 0 0;
+    flex: 1 1 350px;
     margin-block: auto;
 }
 
@@ -76,19 +77,56 @@
 }
 
 #projects .projects-container .text h3 {
-    font: normal 5rem 'Chivo';
+    font: normal 4em 'Chivo';
     color: var(--color2);
     text-decoration: none;
     margin-bottom: 1rem;
 }
 
 #projects .projects-container .text p {
-    font: normal 1.2rem 'Roboto';
+    font: normal 1.2em 'Roboto';
     color: var(--color2);
 }
 
 #projects .projects-container .text p > code {
     padding: .25rem;
-    border-radius: .5rem;
     background-color: var(--shadow1);
+}
+
+@media screen and (width < 1200px) {
+    #projects {
+        flex-direction: column;
+    }
+
+    #projects .title-container {
+        position: static;
+        height: auto;
+        padding: none;
+    }
+
+    #projects .title-container > h2 {
+        transform: none;
+    }
+
+    #projects .projects-container > a:nth-child(n) .card { /* Gambiarra */
+        gap: 1.5rem;
+    }
+
+    #projects .projects-container > a:nth-child(n) .card .text {
+        text-align: left;
+    }
+}
+
+@media screen and (width < 750px) {
+    #projects {
+        font-size: 12px;
+    }
+
+    #projects .projects-container .text > h3 {
+        font-size: 2.6em;
+    }
+
+    #projects .projects-container .text p > code {
+        padding: .125rem;
+    }
 }
