@@ -5,6 +5,7 @@
     --color4: #eeeeff80;
     --shadow1: #30304040;
 }
+
 .welcome {
     height: 100vh;
     display: grid;
