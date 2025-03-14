@@ -16,7 +16,9 @@
 .welcome .welcome-text h1 {
     font: normal 5rem 'Chivo';
     color: var(--color2);
-    animation: up 1.5s;
+    opacity: 0;
+    transform: translateY(100%);
+    animation: up 1.5s .5s both;
 }
 
 @keyframes up {
