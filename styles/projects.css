@@ -69,7 +69,7 @@
 }
 
 #projects .projects-container .text h3 {
-    font: normal 4em 'Chivo';
+    font: normal 3.5em 'Chivo';
     color: var(--color2);
     text-decoration: none;
     margin-bottom: 1rem;

@@ -1,5 +1,5 @@
 #contacts {
-    height: 100vh;
+    min-height: 100vh;
     padding: 3em;
     display: flex;
     flex-direction: column;
