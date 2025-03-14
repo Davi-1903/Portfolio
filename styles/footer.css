@@ -1,11 +1,3 @@
-:root {
-    --color1: #eeeeff;
-    --color2: #303040;
-    --color3: #606080;
-    --color4: #eeeeff80;
-    --shadow1: #30304040;
-}
-
 footer {
     text-align: center;
     background-color: var(--color2);
