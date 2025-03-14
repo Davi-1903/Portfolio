@@ -47,11 +47,6 @@ nav .menu {
     gap: 3rem;
 }
 
-nav .menu > li {
-    width: 8rem;
-    text-align: center;
-}
-
 nav .menu a {
     position: relative;
     font: normal 1.2rem 'Chivo';
