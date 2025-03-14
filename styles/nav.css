@@ -14,7 +14,7 @@
     --color1: #eeeeff;
     --color2: #303040;
     --color3: #606080;
-    --color4: #eeeeff80;
+    --color4: #ffffff;
     --shadow1: #30304040
 }
 
@@ -32,24 +32,25 @@ html {
 nav {
     z-index: 1;
     position: fixed;
-    top: 1rem;
+    top: 1em;
     left: 50%;
     transform: translateX(-50%);
     background-color: var(--color4);
-    backdrop-filter: blur(1rem);
-    padding: 1rem 2rem;
-    box-shadow: .5rem 1rem 2rem var(--shadow1);
+    backdrop-filter: blur(1em);
+    padding: 1em 2em;
+    box-shadow: .5em 1em 2em var(--shadow1);
 }
 
 nav .menu {
     list-style-type: none;
     display: flex;
-    gap: 3rem;
+    gap: 3em;
 }
 
 nav .menu a {
     position: relative;
-    font: normal 1.2rem 'Chivo';
+    text-wrap: nowrap;
+    font: normal 1.2em 'Chivo';
     color: #303040;
     text-decoration: none;
     transition: all 125ms;
@@ -69,4 +70,10 @@ nav .menu a::after {
 nav .menu a:hover::after {
     left: 0;
     width: 100%;
+}
+
+@media screen and (width < 450px) {
+    nav {
+        font-size: 12px;
+    }
 }

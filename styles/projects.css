@@ -96,6 +96,7 @@
 @media screen and (width < 1200px) {
     #projects {
         flex-direction: column;
+        gap: 1.5rem
     }
 
     #projects .title-container {
@@ -120,6 +121,10 @@
 @media screen and (width < 750px) {
     #projects {
         font-size: 12px;
+    }
+
+    #projects .title-container > h2 {
+        font-size: 3.6em;
     }
 
     #projects .projects-container .text > h3 {

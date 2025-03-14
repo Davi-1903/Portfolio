@@ -65,8 +65,12 @@
         font-size: 12px;
     }
 
+    #contacts .title-container {
+        padding-top: 3em;
+    }
+
     #contacts .title-container > h1 {
-        font-size: 4em;
+        font-size: 3.2em;
     }
 
     #contacts .contacts-container .card {
