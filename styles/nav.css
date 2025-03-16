@@ -51,7 +51,7 @@ nav .menu a {
     position: relative;
     text-wrap: nowrap;
     font: normal 1.2em 'Chivo';
-    color: #303040;
+    color: var(--color2);
     text-decoration: none;
     transition: all 125ms;
 }
