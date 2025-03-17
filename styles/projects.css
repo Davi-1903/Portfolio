@@ -36,31 +36,31 @@
 #projects .projects-container .card {
     display: flex;
     flex-wrap: wrap;
-    gap: 3rem;
-    border: 2px solid var(--color2);
-    padding: 1.5rem;
+    border-radius: 2rem;
+    background-color: var(--color5);
+    transition: all 250ms;
+    box-shadow: 0 1rem 2rem var(--shadow1);
 }
 
 #projects .projects-container .card:hover {
-    transform: translate(-.25rem, -.25rem);
-    box-shadow: .25rem .25rem 0 var(--color2);
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1.5rem 2rem var(--shadow1);
 }
 
 #projects .projects-container > a:nth-child(odd) .card {
     flex-direction: row-reverse;
 }
 
-#projects .projects-container .card .img-container {
-    flex: 1 1 350px;
-}
-
 #projects .projects-container .card img {
-    width: 100%;
+    flex: 1 1 350px;
+    width: 0;
+    border-radius: 2rem;
     transition: all 250ms;
 }
 
 #projects .projects-container .text {
     flex: 1 1 350px;
+    padding: 1.5rem;
     margin-block: auto;
 }
 
@@ -103,7 +103,11 @@
     }
 
     #projects .projects-container > a:nth-child(n) .card { /* Gambiarra */
-        gap: 1.5rem;
+        border-radius: 1rem;
+    }
+
+    #projects .projects-container > a:nth-child(n) .card img {
+        border-radius: 1rem;
     }
 
     #projects .projects-container > a:nth-child(n) .card .text {

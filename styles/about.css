@@ -15,19 +15,21 @@
 
 #about-me article {
     flex: 1 1 12rem;
-    padding: 1.5rem;
-    border: 2px solid var(--color2);
-    background-color: var(--color1);
 }
 
 #about-me .img-container > img {
     width: 100%;
+    border-radius: 50%;
 }
 
 #about-me .text-container {
     position: relative;
+    padding: 1.5rem;
+    border-radius: 1rem;
     left: -3rem;
     bottom: -9rem;
+    background-color: var(--color5);
+    box-shadow: 0 1rem 2rem var(--shadow1);
 }
 
 #about-me .text-container > h2 {

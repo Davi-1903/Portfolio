@@ -32,15 +32,18 @@
 
 #contacts .contacts-container .card {
     padding: 1.5em;
-    border: 2px solid var(--color2);
     display: flex;
-    flex-direction: column;
     gap: 1.5em;
+    border-radius: 1rem;
+    flex-direction: column;
+    background-color: var(--color5);
+    box-shadow: 0 0.5em 1rem 0 var(--shadow1);
+    transition: all 250ms;
 }
 
 #contacts .contacts-container .card:hover {
-    transform: translate(-.25em, -.25em);
-    box-shadow: .25em .25em 0 0 var(--color2);
+    transform: translateY(-0.5em);
+    box-shadow: 0 1em 2rem 0 var(--shadow1);
 }
 
 #contacts .contacts-container .card div {
