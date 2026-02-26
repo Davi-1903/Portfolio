@@ -28,7 +28,7 @@ const Root = () => {
 };
 
 const OnMountSignal = ({ onMount }: { onMount: () => void }) => {
-    useEffect(() => onMount(), []);
+    useEffect(() => onMount(), [onMount]);
     return null;
 };
 

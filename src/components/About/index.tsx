@@ -1,7 +1,7 @@
 import { memo, useEffect, useRef, useState } from 'react';
 import Technology from '../Technology';
 import clsx from 'clsx';
-import Me from '../../../public/Me.webp';
+import Me from '/Me.webp';
 
 const About = () => {
     const [isEmerge, setEmerge] = useState(false);
