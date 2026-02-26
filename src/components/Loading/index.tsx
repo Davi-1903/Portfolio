@@ -1,5 +1,5 @@
 import { memo, useEffect, useRef, useState } from 'react';
-import type { LoadingProps } from '../../interfaces/Props';
+import type { LoadingProps } from '@/interfaces/Props';
 import { animate } from 'animejs';
 import clsx from 'clsx';
 

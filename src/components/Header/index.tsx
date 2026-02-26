@@ -1,6 +1,6 @@
 import { memo, useEffect, useRef, useState } from 'react';
-import type { HeaderProps } from '../../interfaces/Props';
-import { useMenu } from '../../context/menuContext';
+import type { HeaderProps } from '@/interfaces/Props';
+import { useMenu } from '@/context/menuContext';
 import MenuButton from './components/MenuButton';
 import MenuMobile from './components/MenuMobile';
 import MenuDask from './components/MenuDesk';

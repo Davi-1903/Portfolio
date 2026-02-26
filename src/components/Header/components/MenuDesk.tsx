@@ -1,5 +1,5 @@
 import { IconBrandGithub, IconBrandInstagram, IconMail, IconMoon, IconSun } from '@tabler/icons-react';
-import { useTheme } from '../../../context/themeContext';
+import { useTheme } from '@/context/themeContext';
 
 const linksList = [
     {

@@ -1,6 +1,6 @@
 import { IconMoon, IconSun } from '@tabler/icons-react';
-import { useMenu } from '../../../context/menuContext';
-import { useTheme } from '../../../context/themeContext';
+import { useMenu } from '@/context/menuContext';
+import { useTheme } from '@/context/themeContext';
 import clsx from 'clsx';
 
 const linksList = [

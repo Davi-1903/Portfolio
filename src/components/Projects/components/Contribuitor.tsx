@@ -1,4 +1,4 @@
-import type { ContributorProps } from '../../../interfaces/Props';
+import type { ContributorProps } from '@/interfaces/Props';
 
 const Contributor = ({ name, url }: ContributorProps) => {
     return (

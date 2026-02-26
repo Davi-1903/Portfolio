@@ -21,7 +21,7 @@ import {
     IconFlask,
     IconSquareNumber0,
 } from '@tabler/icons-react';
-import type { SkillProps } from '../../interfaces/Props';
+import type { SkillProps } from '@/interfaces/Props';
 import clsx from 'clsx';
 
 const Technology = ({ technology, theme = 'light' }: SkillProps) => {

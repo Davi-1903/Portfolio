@@ -1,4 +1,4 @@
-import { useTheme } from '../../context/themeContext';
+import { useTheme } from '@/context/themeContext';
 import Technology from '../Technology';
 
 const Footer = () => {

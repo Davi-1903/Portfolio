@@ -1,5 +1,5 @@
 import { memo } from 'react';
-import type { WelcomeProps } from '../../interfaces/Props';
+import type { WelcomeProps } from '@/interfaces/Props';
 import Parallax from './components/Parallax';
 import clsx from 'clsx';
 

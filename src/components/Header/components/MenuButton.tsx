@@ -1,5 +1,5 @@
 import clsx from 'clsx';
-import { useMenu } from '../../../context/menuContext';
+import { useMenu } from '@/context/menuContext';
 
 const MenuButton = () => {
     const { isOpenMenu, isCloseMenu, setOpenMenu, setCloseMenu } = useMenu();
