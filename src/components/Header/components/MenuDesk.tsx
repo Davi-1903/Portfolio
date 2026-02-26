@@ -34,13 +34,20 @@ const MenuDask = () => {
             <ul className='flex gap-8'>
                 {linksList.map(link => (
                     <li key={link.id}>
-                        <a href={link.url} target={link.target} className='cursor-pointer'>
+                        <a
+                            href={link.url}
+                            target={link.target}
+                            className='cursor-pointer'
+                        >
                             {link.icon}
                         </a>
                     </li>
                 ))}
                 <li key='toggle-theme'>
-                    <button className='cursor-pointer' onClick={toggleTheme}>
+                    <button
+                        className='cursor-pointer'
+                        onClick={toggleTheme}
+                    >
                         {theme === 'dark' ? (
                             <IconMoon className='icon hover:translate-none' />
                         ) : (

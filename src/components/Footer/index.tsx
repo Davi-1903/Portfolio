@@ -10,9 +10,25 @@ const Footer = () => {
                 Copyright &copy; {new Date().getFullYear()}. All rights reserved.
             </p>
             <p className='flex flex-wrap items-center justify-center gap-2 font-primary text-first dark:text-secund'>
-                Made with {<Technology technology='React' theme={theme === 'light' ? 'dark' : 'light'} />}
-                {<Technology technology='TypeScript' theme={theme === 'light' ? 'dark' : 'light'} />}
-                {<Technology technology='Tailwind' theme={theme === 'light' ? 'dark' : 'light'} />}
+                Made with{' '}
+                {
+                    <Technology
+                        technology='React'
+                        theme={theme === 'light' ? 'dark' : 'light'}
+                    />
+                }
+                {
+                    <Technology
+                        technology='TypeScript'
+                        theme={theme === 'light' ? 'dark' : 'light'}
+                    />
+                }
+                {
+                    <Technology
+                        technology='Tailwind'
+                        theme={theme === 'light' ? 'dark' : 'light'}
+                    />
+                }
             </p>
         </footer>
     );

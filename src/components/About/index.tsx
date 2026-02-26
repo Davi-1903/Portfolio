@@ -54,7 +54,10 @@ const About = () => {
                     isEmerge && 'animate-translate-left',
                 )}
             >
-                <img src={Me} alt='Me' />
+                <img
+                    src={Me}
+                    alt='Me'
+                />
             </div>
             <div className={clsx('w-sm text-secund opacity-0', isEmerge && 'animate-translate-right')}>
                 <h2 className='font-primary text-5xl font-bold'>Who am i?</h2>

@@ -22,7 +22,10 @@ const Projects = () => {
     }, []);
 
     return (
-        <section ref={sectionRef} className='flex min-h-screen flex-col gap-24 bg-first p-8 pt-0 lg:p-24'>
+        <section
+            ref={sectionRef}
+            className='flex min-h-screen flex-col gap-24 bg-first p-8 pt-0 lg:p-24'
+        >
             <div>
                 <h2
                     className={clsx(
@@ -35,7 +38,10 @@ const Projects = () => {
             </div>
             <ul className='mx-auto w-full max-w-600 flex-1 columns-sm gap-8 sm:columns-2 md:gap-12 lg:columns-sm'>
                 {projectList.map(project => (
-                    <li key={project.id} className='not-last:mb-12'>
+                    <li
+                        key={project.id}
+                        className='not-last:mb-12'
+                    >
                         <CardProject {...project} />
                     </li>
                 ))}

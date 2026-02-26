@@ -33,7 +33,12 @@ const CardProject = ({ name, description, projectURL, imageURL, team, technologi
                 isEmerge && 'animate-translate-down',
             )}
         >
-            <img src={imageURL} alt={`Project ${name}`} className='border-2 border-secund' loading='lazy' />
+            <img
+                src={imageURL}
+                alt={`Project ${name}`}
+                className='border-2 border-secund'
+                loading='lazy'
+            />
             <h3 className='font-primary text-4xl font-bold text-secund'>{name}</h3>
             <p className='dark:text-secund-50 font-secundary text-2xl text-secund'>{description}</p>
             {team && (
@@ -56,7 +61,11 @@ const CardProject = ({ name, description, projectURL, imageURL, team, technologi
                     </li>
                 ))}
             </ul>
-            <a href={projectURL} target='_blank' className='mt-2 w-full bg-orange-600 md:w-fit'>
+            <a
+                href={projectURL}
+                target='_blank'
+                className='mt-2 w-full bg-orange-600 md:w-fit'
+            >
                 <button className='group relative w-full cursor-pointer self-start overflow-x-hidden border-2 border-secund bg-secund px-4 py-2 font-primary text-lg font-semibold text-first transition-all duration-250 not-dark:hover:text-secund md:hover:pr-14 dark:bg-first dark:text-secund dark:hover:text-first'>
                     <div className='absolute top-0 left-0 h-full w-0 bg-first transition-all duration-250 group-hover:w-full dark:bg-secund'></div>
                     <span className='relative'>View on Github</span>

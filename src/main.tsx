@@ -16,7 +16,12 @@ const Root = () => {
 
     return (
         <>
-            {!loadingEnd && <Loading isReady={isReady} setLoadingEnd={setLoadingEnd} />}
+            {!loadingEnd && (
+                <Loading
+                    isReady={isReady}
+                    setLoadingEnd={setLoadingEnd}
+                />
+            )}
             <Suspense fallback={null}>
                 <OnMountSignal onMount={() => setReady(true)} />
                 <WrappeContexts>

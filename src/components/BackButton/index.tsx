@@ -27,7 +27,10 @@ const BackButton = () => {
                 onClick={() => window.scroll({ top: 0, behavior: 'smooth' })}
                 aria-label='back to top'
             >
-                <IconArrowUp size={32} className='stroke-secund' />
+                <IconArrowUp
+                    size={32}
+                    className='stroke-secund'
+                />
             </button>
         </article>
     );

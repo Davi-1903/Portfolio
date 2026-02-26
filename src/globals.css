@@ -52,14 +52,7 @@
 
 @layer components {
     .icon {
-        height: 32pt;
-        width: 32pt;
-        stroke: var(--secund-color);
-        transition: transform 125ms;
-
-        &:hover {
-            transform: translateY(-0.5rem);
-        }
+        @apply h-[32pt] w-[32pt] stroke-secund transition-transform duration-125 hover:-translate-y-2;
     }
 }
 

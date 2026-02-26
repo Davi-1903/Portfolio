@@ -19,7 +19,8 @@ export default defineConfig({
         rollupOptions: {
             output: {
                 manualChunks: {
-                    vendor: ['react', 'react-dom', 'tailwindcss'],
+                    react: ['react', 'react-dom'],
+                    vendor: ['tailwindcss', 'clsx', 'animejs'],
                     ui: ['@tabler/icons-react'],
                 },
             },
