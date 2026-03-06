@@ -56,10 +56,6 @@
     }
 }
 
-@utility animate-welcome {
-    animation: animation-welcome 2s forwards;
-}
-
 @utility animate-header {
     animation: animation-translate-up 2s forwards;
 }
@@ -94,18 +90,6 @@
 
 @utility animate-loading {
     animation: animation-loading 1s 2s ease both;
-}
-
-@keyframes animation-welcome {
-    from {
-        opacity: 0;
-        transform: translateY(100%);
-    }
-
-    to {
-        opacity: 1;
-        transform: none;
-    }
 }
 
 @keyframes fade-in {

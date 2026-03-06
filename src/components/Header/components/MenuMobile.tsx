@@ -38,7 +38,7 @@ const MenuMobile = () => {
     return (
         <nav
             className={clsx(
-                'fixed top-0 left-0 z-2 h-screen w-screen bg-first/25 backdrop-blur-2xl',
+                'fixed top-0 left-0 z-2 h-screen w-screen bg-first',
                 isCloseMenu ? 'animate-fade-out' : 'animate-fade-in',
             )}
             onAnimationEnd={onAnimationEnd}
@@ -49,7 +49,7 @@ const MenuMobile = () => {
                         <a
                             href={link.url}
                             target={link.target}
-                            className='block cursor-pointer overflow-hidden rounded-xl p-3 font-primary text-5xl font-bold text-ellipsis text-secund transition-all duration-100 hover:bg-secund/25'
+                            className='block cursor-pointer overflow-hidden rounded-xl p-3 font-primary text-5xl font-bold text-ellipsis text-secund transition-all duration-100 hover:bg-secund/15'
                         >
                             {link.name}
                         </a>
@@ -57,7 +57,7 @@ const MenuMobile = () => {
                 ))}
                 <li key='toggle-theme'>
                     <button
-                        className='cursor-pointer rounded-xl p-2 transition-all duration-100 hover:bg-secund/25'
+                        className='cursor-pointer rounded-xl p-2 transition-all duration-100 hover:bg-secund/15'
                         onClick={toggleTheme}
                     >
                         {theme === 'dark' ? (
