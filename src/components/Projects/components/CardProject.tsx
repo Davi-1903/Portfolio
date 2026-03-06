@@ -38,6 +38,8 @@ const CardProject = ({ name, description, projectURL, imageURL, team, technologi
                 alt={`Project ${name}`}
                 className='border-2 border-secund'
                 loading='lazy'
+                width={960}
+                height={640}
             />
             <h3 className='font-primary text-4xl font-bold text-secund'>{name}</h3>
             <p className='dark:text-secund-50 font-secundary text-2xl text-secund'>{description}</p>

@@ -57,6 +57,8 @@ const About = () => {
                 <img
                     src={Me}
                     alt='Me'
+                    width={400}
+                    height={500}
                 />
             </div>
             <div className={clsx('w-sm text-secund opacity-0', isEmerge && 'animate-translate-right')}>
