@@ -13,6 +13,7 @@ const linksList = [
     {
         id: 2,
         name: 'Instagram',
+        url: 'https://instagram.com/davifran11',
         target: '_blank',
     },
     {

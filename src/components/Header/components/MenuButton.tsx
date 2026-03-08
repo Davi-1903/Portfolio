@@ -23,9 +23,9 @@ const MenuButton = () => {
             ></div>
             <div
                 className={clsx(
-                    'absolute h-1/10 w-4/5 rounded-full bg-secund transition-all duration-500',
+                    'absolute h-1/10 w-1/2 rounded-full bg-secund transition-all duration-500',
                     isOpenMenu && !isCloseMenu
-                        ? 'right-1/2 bottom-1/2 translate-1/2 -rotate-225'
+                        ? 'right-1/2 bottom-1/2 w-4/5 translate-1/2 -rotate-225'
                         : 'right-1/10 bottom-3/10',
                 )}
             ></div>
