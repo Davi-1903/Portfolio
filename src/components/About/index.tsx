@@ -66,7 +66,7 @@ const About = () => {
                 <hr className='my-2 border border-secund' />
                 <p className='font-secundary text-lg/normal'>
                     I am a <strong>Web developer</strong>. My full name is -{' '}
-                    <strong>Davi Francisco da Silva Fonseca</strong> and I am 17 years old. I currently live in -
+                    <strong>Davi Francisco da Silva Fonseca</strong> and I am 18 years old. I currently live in -
                     Jucurutu, RN - Brazil. I'm in my 4th year of internet computing at <strong>IFRN</strong> - Campus -
                     Caicó
                 </p>
