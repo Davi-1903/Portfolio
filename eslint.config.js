@@ -16,10 +16,11 @@ export default defineConfig([
             reactRefresh.configs.vite,
         ],
         languageOptions: {
-            ecmaVersion: 2020,
             globals: globals.browser,
         },
         rules: {
+            ...reactHooks.configs['recommended-latest'].rules,
+            'no-unused-vars': ['error', { varsIgnorePattern: '^[A-Z_]' }],
             'react-refresh/only-export-components': 'off',
         },
     },
