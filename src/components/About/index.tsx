@@ -8,6 +8,7 @@ const About = () => {
     const sectionRef = useRef<HTMLDivElement | null>(null);
     const skills = [
         'Python',
+        'Rust',
         'HTML',
         'CSS',
         'JavaScript',
@@ -16,6 +17,7 @@ const About = () => {
         'SQLite',
         'Markdown',
         'Flask',
+        'FastAPI',
         'React',
         'Tailwind',
         'Git',
@@ -61,7 +63,7 @@ const About = () => {
                     height={500}
                 />
             </div>
-            <div className={clsx('w-sm text-secund opacity-0', isEmerge && 'animate-translate-right')}>
+            <div className={clsx('w-md text-secund opacity-0', isEmerge && 'animate-translate-right')}>
                 <h2 className='font-primary text-5xl font-bold'>Who am i?</h2>
                 <hr className='my-2 border border-secund' />
                 <p className='font-secundary text-lg/normal'>
