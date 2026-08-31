@@ -29,7 +29,12 @@ export const projectList: Project[] = [
         description: 'Medical clinic scheduling system for the POAS course',
         imageURL: '/projects/MediCloud.webp',
         projectURL: 'https://github.com/Davi-1903/MediCloud',
-        technologies: ['React', 'FastAPI'],
+        technologies: ['React', 'FastAPI', 'Tailwind','MySQL'],
+        team: [
+            { id: 1, name: 'Ana Cecilya', url: 'https://github.com/cecilya1' },
+            { id: 2, name: 'Ana Clara', url: 'https://github.com/anaclaraa1' },
+            { id: 3, name: 'Maria das Graças', url: 'https://github.com/mgdantas1' },
+        ],
     },
     {
         id: 4,
